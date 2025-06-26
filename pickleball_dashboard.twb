@@ -1,0 +1,2905 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0618.0924                               -->
+<workbook original-version='18.1' source-build='2024.1.4 (20241.24.0618.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='game' inline='true' name='federated.02ym3mm1ilrcbo1f0q6v61pazvkr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='game' name='textscan.0ma0mh807fmzdj14lt95i1723z4s'>
+            <connection class='textscan' directory='C:/Users/Khanh Phan/Desktop/Projects/Pickleball_Data_Warehouse/data/etl_export' filename='game.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0ma0mh807fmzdj14lt95i1723z4s' name='game.csv' table='[game#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='game_id' ordinal='0' />
+            <column datatype='string' name='match_id' ordinal='1' />
+            <column datatype='integer' name='game_number' ordinal='2' />
+            <column datatype='integer' name='winner_score' ordinal='3' />
+            <column datatype='integer' name='loser_score' ordinal='4' />
+            <column datatype='string' name='winning_team_id' ordinal='5' />
+            <column datatype='string' name='losing_team_id' ordinal='6' />
+            <column datatype='string' name='skill_level' ordinal='7' />
+            <column datatype='string' name='scoring_type' ordinal='8' />
+            <column datatype='string' name='doubles_type' ordinal='9' />
+            <column datatype='string' name='ball_type' ordinal='10' />
+            <column datatype='datetime' name='date_played' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0ma0mh807fmzdj14lt95i1723z4s' name='game.csv' table='[game#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='game_id' ordinal='0' />
+            <column datatype='string' name='match_id' ordinal='1' />
+            <column datatype='integer' name='game_number' ordinal='2' />
+            <column datatype='integer' name='winner_score' ordinal='3' />
+            <column datatype='integer' name='loser_score' ordinal='4' />
+            <column datatype='string' name='winning_team_id' ordinal='5' />
+            <column datatype='string' name='losing_team_id' ordinal='6' />
+            <column datatype='string' name='skill_level' ordinal='7' />
+            <column datatype='string' name='scoring_type' ordinal='8' />
+            <column datatype='string' name='doubles_type' ordinal='9' />
+            <column datatype='string' name='ball_type' ordinal='10' />
+            <column datatype='datetime' name='date_played' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[game_id]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>game_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_88D69BC2BC1C4BB4B98FBA6FEDAC5E70]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>match_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[match_id]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>match_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_88D69BC2BC1C4BB4B98FBA6FEDAC5E70]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[game_number]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>game_number</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_88D69BC2BC1C4BB4B98FBA6FEDAC5E70]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winner_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[winner_score]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>winner_score</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_88D69BC2BC1C4BB4B98FBA6FEDAC5E70]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loser_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[loser_score]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>loser_score</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_88D69BC2BC1C4BB4B98FBA6FEDAC5E70]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winning_team_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winning_team_id]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>winning_team_id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_88D69BC2BC1C4BB4B98FBA6FEDAC5E70]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losing_team_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[losing_team_id]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>losing_team_id</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_88D69BC2BC1C4BB4B98FBA6FEDAC5E70]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>skill_level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[skill_level]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>skill_level</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_88D69BC2BC1C4BB4B98FBA6FEDAC5E70]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>scoring_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[scoring_type]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>scoring_type</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_88D69BC2BC1C4BB4B98FBA6FEDAC5E70]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>doubles_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[doubles_type]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>doubles_type</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_88D69BC2BC1C4BB4B98FBA6FEDAC5E70]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ball_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ball_type]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>ball_type</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_88D69BC2BC1C4BB4B98FBA6FEDAC5E70]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_played</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[date_played]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>date_played</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_88D69BC2BC1C4BB4B98FBA6FEDAC5E70]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ball Type (VulcanGrouped)' datatype='string' name='[Calculation_4403394560565420035]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [ball_type] = &apos;Vulcan VPRO 1 Outdoor PPA Tour&apos; OR [ball_type] = &apos;Vulcan VPRO 2&apos; THEN &apos;Vulcan VPRO&apos; ELSE [ball_type] END' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='game.csv' datatype='table' name='[__tableau_internal_object_id__].[game.csv_88D69BC2BC1C4BB4B98FBA6FEDAC5E70]' role='measure' type='quantitative' />
+      <column caption='Ball Type' datatype='string' name='[ball_type]' role='dimension' type='nominal' />
+      <column caption='Date Played' datatype='datetime' name='[date_played]' role='dimension' type='ordinal' />
+      <column caption='Doubles Type' datatype='string' name='[doubles_type]' role='dimension' type='nominal' />
+      <column caption='Game Id' datatype='string' name='[game_id]' role='dimension' type='nominal' />
+      <column caption='Game Number' datatype='integer' name='[game_number]' role='dimension' type='ordinal' />
+      <column caption='Loser Score' datatype='integer' name='[loser_score]' role='measure' type='quantitative' />
+      <column caption='Losing Team Id' datatype='string' name='[losing_team_id]' role='dimension' type='nominal' />
+      <column caption='Match Id' datatype='string' name='[match_id]' role='dimension' type='nominal' />
+      <column caption='Scoring Type' datatype='string' name='[scoring_type]' role='dimension' type='nominal' />
+      <column caption='Skill Level' datatype='string' name='[skill_level]' role='dimension' type='nominal' />
+      <column caption='Winner Score' datatype='integer' name='[winner_score]' role='measure' type='quantitative' />
+      <column caption='Winning Team Id' datatype='string' name='[winning_team_id]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_4403394560565420035]' derivation='None' name='[none:Calculation_4403394560565420035:nk]' pivot='key' type='nominal' />
+      <column-instance column='[ball_type]' derivation='None' name='[none:ball_type:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/KHANHP~1/AppData/Local/Temp/TableauTemp/#TableauTemp_1gmb6kb0e2e3jj1c364az0vgt44l.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/26/2025 04:09:54 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>game_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[game_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>game_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>game.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>934</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>match_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[match_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>match_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>game.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>768</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>game_number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[game_number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>game_number</remote-alias>
+              <ordinal>2</ordinal>
+              <family>game.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>winner_score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[winner_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>winner_score</remote-alias>
+              <ordinal>3</ordinal>
+              <family>game.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>loser_score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[loser_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>loser_score</remote-alias>
+              <ordinal>4</ordinal>
+              <family>game.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>winning_team_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[winning_team_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>winning_team_id</remote-alias>
+              <ordinal>5</ordinal>
+              <family>game.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>481</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>losing_team_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[losing_team_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>losing_team_id</remote-alias>
+              <ordinal>6</ordinal>
+              <family>game.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>499</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>skill_level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[skill_level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>skill_level</remote-alias>
+              <ordinal>7</ordinal>
+              <family>game.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>scoring_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[scoring_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>scoring_type</remote-alias>
+              <ordinal>8</ordinal>
+              <family>game.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>doubles_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[doubles_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>doubles_type</remote-alias>
+              <ordinal>9</ordinal>
+              <family>game.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ball_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ball_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ball_type</remote-alias>
+              <ordinal>10</ordinal>
+              <family>game.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date_played</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[date_played]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date_played</remote-alias>
+              <ordinal>11</ordinal>
+              <family>game.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>250</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:ball_type:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Selkirk Pro S1&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Alpha Zero Outdoor&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Gamma CHUCK&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Vulcan VPRO 1 Outdoor PPA Tour&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Gearbox GB1&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;CORE Pickleball Outdoor&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;JOOLA Heleus&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Vulcan VPRO 2&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Dura Fast 40&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Franklin X-40&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_4403394560565420035:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Alpha Zero Outdoor&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Gamma CHUCK&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Franklin X-40&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Selkirk Pro S1&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;JOOLA Heleus&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Vulcan VPRO&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Dura Fast 40&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Gearbox GB1&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;CORE Pickleball Outdoor&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='game.csv' id='game.csv_88D69BC2BC1C4BB4B98FBA6FEDAC5E70'>
+            <properties context=''>
+              <relation connection='textscan.0ma0mh807fmzdj14lt95i1723z4s' name='game.csv' table='[game#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='game_id' ordinal='0' />
+                  <column datatype='string' name='match_id' ordinal='1' />
+                  <column datatype='integer' name='game_number' ordinal='2' />
+                  <column datatype='integer' name='winner_score' ordinal='3' />
+                  <column datatype='integer' name='loser_score' ordinal='4' />
+                  <column datatype='string' name='winning_team_id' ordinal='5' />
+                  <column datatype='string' name='losing_team_id' ordinal='6' />
+                  <column datatype='string' name='skill_level' ordinal='7' />
+                  <column datatype='string' name='scoring_type' ordinal='8' />
+                  <column datatype='string' name='doubles_type' ordinal='9' />
+                  <column datatype='string' name='ball_type' ordinal='10' />
+                  <column datatype='datetime' name='date_played' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='rally.csv+ (Multiple Connections)' inline='true' name='federated.1bxan031iz7ynu0zjza6g12yblcx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='rally' name='textscan.138xtza0kwbrab1507mkn1wavhc1'>
+            <connection class='textscan' directory='C:/Users/Khanh Phan/Desktop/Projects/Pickleball_Data_Warehouse/data/etl_export' filename='rally.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='shot' name='textscan.0rwpw1o04nzh9n13r47mn1sztwto'>
+            <connection class='textscan' directory='C:/Users/Khanh Phan/Desktop/Projects/Pickleball_Data_Warehouse/data/etl_export' filename='shot.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='game' name='textscan.1gfq6461sn85qd19mhpqp152y3ix'>
+            <connection class='textscan' directory='C:/Users/Khanh Phan/Desktop/Projects/Pickleball_Data_Warehouse/data/etl_export' filename='game.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0rwpw1o04nzh9n13r47mn1sztwto' name='game.csv' table='[game#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='game_id' ordinal='0' />
+            <column datatype='string' name='match_id' ordinal='1' />
+            <column datatype='integer' name='game_number' ordinal='2' />
+            <column datatype='integer' name='winner_score' ordinal='3' />
+            <column datatype='integer' name='loser_score' ordinal='4' />
+            <column datatype='string' name='winning_team_id' ordinal='5' />
+            <column datatype='string' name='losing_team_id' ordinal='6' />
+            <column datatype='string' name='skill_level' ordinal='7' />
+            <column datatype='string' name='scoring_type' ordinal='8' />
+            <column datatype='string' name='doubles_type' ordinal='9' />
+            <column datatype='string' name='ball_type' ordinal='10' />
+            <column datatype='datetime' name='date_played' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.138xtza0kwbrab1507mkn1wavhc1' name='rally.csv' table='[rally#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='rally_id' ordinal='0' />
+              <column datatype='string' name='game_id' ordinal='1' />
+              <column datatype='string' name='match_id' ordinal='2' />
+              <column datatype='integer' name='rally_number' ordinal='3' />
+              <column datatype='string' name='winning_team_id' ordinal='4' />
+              <column datatype='string' name='serving_team_id' ordinal='5' />
+              <column datatype='string' name='serving_player_id' ordinal='6' />
+              <column datatype='string' name='returning_team_id' ordinal='7' />
+              <column datatype='string' name='returning_player_id' ordinal='8' />
+              <column datatype='string' name='thirdshot_player_id' ordinal='9' />
+              <column datatype='string' name='third_shot_type' ordinal='10' />
+              <column datatype='string' name='timeout' ordinal='11' />
+              <column datatype='string' name='timeout_team_id' ordinal='12' />
+              <column datatype='integer' name='rally_length' ordinal='13' />
+              <column datatype='string' name='ending_type' ordinal='14' />
+              <column datatype='string' name='ending_player_id' ordinal='15' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0rwpw1o04nzh9n13r47mn1sztwto' name='game.csv' table='[game#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='game_id' ordinal='0' />
+              <column datatype='string' name='match_id' ordinal='1' />
+              <column datatype='integer' name='game_number' ordinal='2' />
+              <column datatype='integer' name='winner_score' ordinal='3' />
+              <column datatype='integer' name='loser_score' ordinal='4' />
+              <column datatype='string' name='winning_team_id' ordinal='5' />
+              <column datatype='string' name='losing_team_id' ordinal='6' />
+              <column datatype='string' name='skill_level' ordinal='7' />
+              <column datatype='string' name='scoring_type' ordinal='8' />
+              <column datatype='string' name='doubles_type' ordinal='9' />
+              <column datatype='string' name='ball_type' ordinal='10' />
+              <column datatype='datetime' name='date_played' ordinal='11' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0rwpw1o04nzh9n13r47mn1sztwto' name='shot.csv' table='[shot#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='shot_id' ordinal='0' />
+              <column datatype='string' name='rally_id' ordinal='1' />
+              <column datatype='integer' name='shot_number' ordinal='2' />
+              <column datatype='string' name='shot_type' ordinal='3' />
+              <column datatype='string' name='player_id' ordinal='4' />
+              <column datatype='real' name='loc_x' ordinal='5' />
+              <column datatype='real' name='loc_y' ordinal='6' />
+              <column datatype='real' name='next_loc_x' ordinal='7' />
+              <column datatype='real' name='next_loc_y' ordinal='8' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[ball_type]' value='[game.csv].[ball_type]' />
+          <map key='[date_played]' value='[game.csv].[date_played]' />
+          <map key='[doubles_type]' value='[game.csv].[doubles_type]' />
+          <map key='[ending_player_id]' value='[rally.csv].[ending_player_id]' />
+          <map key='[ending_type]' value='[rally.csv].[ending_type]' />
+          <map key='[game_id (game.csv)]' value='[game.csv].[game_id]' />
+          <map key='[game_id]' value='[rally.csv].[game_id]' />
+          <map key='[game_number]' value='[game.csv].[game_number]' />
+          <map key='[loc_x]' value='[shot.csv].[loc_x]' />
+          <map key='[loc_y]' value='[shot.csv].[loc_y]' />
+          <map key='[loser_score]' value='[game.csv].[loser_score]' />
+          <map key='[losing_team_id]' value='[game.csv].[losing_team_id]' />
+          <map key='[match_id (game.csv)]' value='[game.csv].[match_id]' />
+          <map key='[match_id]' value='[rally.csv].[match_id]' />
+          <map key='[next_loc_x]' value='[shot.csv].[next_loc_x]' />
+          <map key='[next_loc_y]' value='[shot.csv].[next_loc_y]' />
+          <map key='[player_id]' value='[shot.csv].[player_id]' />
+          <map key='[rally_id (shot.csv)]' value='[shot.csv].[rally_id]' />
+          <map key='[rally_id]' value='[rally.csv].[rally_id]' />
+          <map key='[rally_length]' value='[rally.csv].[rally_length]' />
+          <map key='[rally_number]' value='[rally.csv].[rally_number]' />
+          <map key='[returning_player_id]' value='[rally.csv].[returning_player_id]' />
+          <map key='[returning_team_id]' value='[rally.csv].[returning_team_id]' />
+          <map key='[scoring_type]' value='[game.csv].[scoring_type]' />
+          <map key='[serving_player_id]' value='[rally.csv].[serving_player_id]' />
+          <map key='[serving_team_id]' value='[rally.csv].[serving_team_id]' />
+          <map key='[shot_id]' value='[shot.csv].[shot_id]' />
+          <map key='[shot_number]' value='[shot.csv].[shot_number]' />
+          <map key='[shot_type]' value='[shot.csv].[shot_type]' />
+          <map key='[skill_level]' value='[game.csv].[skill_level]' />
+          <map key='[third_shot_type]' value='[rally.csv].[third_shot_type]' />
+          <map key='[thirdshot_player_id]' value='[rally.csv].[thirdshot_player_id]' />
+          <map key='[timeout]' value='[rally.csv].[timeout]' />
+          <map key='[timeout_team_id]' value='[rally.csv].[timeout_team_id]' />
+          <map key='[winner_score]' value='[game.csv].[winner_score]' />
+          <map key='[winning_team_id (game.csv)]' value='[game.csv].[winning_team_id]' />
+          <map key='[winning_team_id]' value='[rally.csv].[winning_team_id]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[rally.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[shot.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rally_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rally_id]</local-name>
+            <parent-name>[rally.csv]</parent-name>
+            <remote-alias>rally_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[game_id]</local-name>
+            <parent-name>[rally.csv]</parent-name>
+            <remote-alias>game_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>match_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[match_id]</local-name>
+            <parent-name>[rally.csv]</parent-name>
+            <remote-alias>match_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rally_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rally_number]</local-name>
+            <parent-name>[rally.csv]</parent-name>
+            <remote-alias>rally_number</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winning_team_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winning_team_id]</local-name>
+            <parent-name>[rally.csv]</parent-name>
+            <remote-alias>winning_team_id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>serving_team_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[serving_team_id]</local-name>
+            <parent-name>[rally.csv]</parent-name>
+            <remote-alias>serving_team_id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>serving_player_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[serving_player_id]</local-name>
+            <parent-name>[rally.csv]</parent-name>
+            <remote-alias>serving_player_id</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returning_team_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[returning_team_id]</local-name>
+            <parent-name>[rally.csv]</parent-name>
+            <remote-alias>returning_team_id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returning_player_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[returning_player_id]</local-name>
+            <parent-name>[rally.csv]</parent-name>
+            <remote-alias>returning_player_id</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>thirdshot_player_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[thirdshot_player_id]</local-name>
+            <parent-name>[rally.csv]</parent-name>
+            <remote-alias>thirdshot_player_id</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>third_shot_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[third_shot_type]</local-name>
+            <parent-name>[rally.csv]</parent-name>
+            <remote-alias>third_shot_type</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timeout</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[timeout]</local-name>
+            <parent-name>[rally.csv]</parent-name>
+            <remote-alias>timeout</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timeout_team_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[timeout_team_id]</local-name>
+            <parent-name>[rally.csv]</parent-name>
+            <remote-alias>timeout_team_id</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rally_length</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rally_length]</local-name>
+            <parent-name>[rally.csv]</parent-name>
+            <remote-alias>rally_length</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ending_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ending_type]</local-name>
+            <parent-name>[rally.csv]</parent-name>
+            <remote-alias>ending_type</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ending_player_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ending_player_id]</local-name>
+            <parent-name>[rally.csv]</parent-name>
+            <remote-alias>ending_player_id</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[game_id (game.csv)]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>game_id</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>match_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[match_id (game.csv)]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>match_id</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[game_number]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>game_number</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winner_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[winner_score]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>winner_score</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loser_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[loser_score]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>loser_score</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winning_team_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winning_team_id (game.csv)]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>winning_team_id</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>losing_team_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[losing_team_id]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>losing_team_id</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>skill_level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[skill_level]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>skill_level</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>scoring_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[scoring_type]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>scoring_type</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>doubles_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[doubles_type]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>doubles_type</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ball_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ball_type]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>ball_type</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_played</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[date_played]</local-name>
+            <parent-name>[game.csv]</parent-name>
+            <remote-alias>date_played</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shot_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[shot_id]</local-name>
+            <parent-name>[shot.csv]</parent-name>
+            <remote-alias>shot_id</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rally_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rally_id (shot.csv)]</local-name>
+            <parent-name>[shot.csv]</parent-name>
+            <remote-alias>rally_id</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shot_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shot_number]</local-name>
+            <parent-name>[shot.csv]</parent-name>
+            <remote-alias>shot_number</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shot_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[shot_type]</local-name>
+            <parent-name>[shot.csv]</parent-name>
+            <remote-alias>shot_type</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_id]</local-name>
+            <parent-name>[shot.csv]</parent-name>
+            <remote-alias>player_id</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loc_x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[loc_x]</local-name>
+            <parent-name>[shot.csv]</parent-name>
+            <remote-alias>loc_x</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loc_y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[loc_y]</local-name>
+            <parent-name>[shot.csv]</parent-name>
+            <remote-alias>loc_y</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>next_loc_x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[next_loc_x]</local-name>
+            <parent-name>[shot.csv]</parent-name>
+            <remote-alias>next_loc_x</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>next_loc_y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[next_loc_y]</local-name>
+            <parent-name>[shot.csv]</parent-name>
+            <remote-alias>next_loc_y</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ball Type (VulcanGrouped)' datatype='string' name='[Calculation_4403394560567709700]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF CONTAINS([ball_type], &quot;Vulcan&quot;) THEN &quot;Vulcan VPRO&quot; &#13;&#10;ELSE [ball_type]&#13;&#10;END' />
+      </column>
+      <column caption='Skill Ranges' datatype='string' name='[Calculation_4403394560569364485]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [skill_level] = &apos;2.5&apos; THEN &apos;&lt; 3.0&apos;&#13;&#10;ELSEIF [skill_level] = &apos;3.0&apos; OR [skill_level] = &apos;3.5&apos; THEN &apos;3.0 - 3.5&apos;&#13;&#10;ELSEIF [skill_level] = &apos;4.0&apos; OR [skill_level] = &apos;4.5&apos; THEN &apos;4.0 - 4.5&apos;&#13;&#10;ELSEIF [skill_level] = &apos;5.0&apos; OR [skill_level] = &apos;5.5&apos; THEN &apos;5.0 - 5.5&apos;&#13;&#10;ELSEIF [skill_level] = &apos;Pro&apos; THEN &apos;Pro&apos;&#13;&#10;ELSEIF [skill_level] = &apos;Senior Pro&apos; THEN &apos;Senior Pro&apos;&#13;&#10;ELSE NULL&#13;&#10;END' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='game.csv' datatype='table' name='[__tableau_internal_object_id__].[game.csv_5F8E8A250AB744338F2414E6666B14DF]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='rally.csv' datatype='table' name='[__tableau_internal_object_id__].[rally.csv_C317B300146545E8AD89F068B822B297]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='shot.csv' datatype='table' name='[__tableau_internal_object_id__].[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]' role='measure' type='quantitative' />
+      <column caption='Ball Type' datatype='string' name='[ball_type]' role='dimension' type='nominal' />
+      <column caption='Date Played' datatype='datetime' name='[date_played]' role='dimension' type='ordinal' />
+      <column caption='Doubles Type' datatype='string' name='[doubles_type]' role='dimension' type='nominal' />
+      <column caption='Ending Player Id' datatype='string' name='[ending_player_id]' role='dimension' type='nominal' />
+      <column caption='Ending Type' datatype='string' name='[ending_type]' role='dimension' type='nominal' />
+      <column caption='Game Id (Game.Csv)' datatype='string' name='[game_id (game.csv)]' role='dimension' type='nominal' />
+      <column caption='Game Id' datatype='string' name='[game_id]' role='dimension' type='nominal' />
+      <column caption='Game Number' datatype='integer' name='[game_number]' role='dimension' type='ordinal' />
+      <column caption='Loc X' datatype='real' name='[loc_x]' role='measure' type='quantitative' />
+      <column caption='Loc Y' datatype='real' name='[loc_y]' role='measure' type='quantitative' />
+      <column caption='Loser Score' datatype='integer' name='[loser_score]' role='measure' type='quantitative' />
+      <column caption='Losing Team Id' datatype='string' name='[losing_team_id]' role='dimension' type='nominal' />
+      <column caption='Match Id (Game.Csv)' datatype='string' name='[match_id (game.csv)]' role='dimension' type='nominal' />
+      <column caption='Match Id' datatype='string' name='[match_id]' role='dimension' type='nominal' />
+      <column caption='Next Loc X' datatype='real' name='[next_loc_x]' role='measure' type='quantitative' />
+      <column caption='Next Loc Y' datatype='real' name='[next_loc_y]' role='measure' type='quantitative' />
+      <column caption='Player Id' datatype='string' name='[player_id]' role='dimension' type='nominal' />
+      <column caption='Rally Id (Shot.Csv)' datatype='string' name='[rally_id (shot.csv)]' role='dimension' type='nominal' />
+      <column caption='Rally Id' datatype='string' name='[rally_id]' role='dimension' type='nominal' />
+      <column caption='Rally Length' datatype='integer' name='[rally_length]' role='measure' type='quantitative' />
+      <column caption='Rally Number' datatype='integer' name='[rally_number]' role='dimension' type='ordinal' />
+      <column caption='Returning Player Id' datatype='string' name='[returning_player_id]' role='dimension' type='nominal' />
+      <column caption='Returning Team Id' datatype='string' name='[returning_team_id]' role='dimension' type='nominal' />
+      <column caption='Scoring Type' datatype='string' name='[scoring_type]' role='dimension' type='nominal' />
+      <column caption='Serving Player Id' datatype='string' name='[serving_player_id]' role='dimension' type='nominal' />
+      <column caption='Serving Team Id' datatype='string' name='[serving_team_id]' role='dimension' type='nominal' />
+      <column caption='Shot Id' datatype='string' name='[shot_id]' role='dimension' type='nominal' />
+      <column caption='Shot Number' datatype='integer' name='[shot_number]' role='dimension' type='ordinal' />
+      <column caption='Shot Type' datatype='string' name='[shot_type]' role='dimension' type='nominal' />
+      <column caption='Skill Level' datatype='string' name='[skill_level]' role='dimension' type='nominal' />
+      <column caption='Third Shot Type' datatype='string' name='[third_shot_type]' role='dimension' type='nominal' />
+      <column caption='Thirdshot Player Id' datatype='string' name='[thirdshot_player_id]' role='dimension' type='nominal' />
+      <column caption='Timeout' datatype='string' name='[timeout]' role='dimension' type='nominal' />
+      <column caption='Timeout Team Id' datatype='string' name='[timeout_team_id]' role='dimension' type='nominal' />
+      <column caption='Winner Score' datatype='integer' name='[winner_score]' role='measure' type='quantitative' />
+      <column caption='Winning Team Id (Game.Csv)' datatype='string' name='[winning_team_id (game.csv)]' role='dimension' type='nominal' />
+      <column caption='Winning Team Id' datatype='string' name='[winning_team_id]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_4403394560567709700]' derivation='None' name='[none:Calculation_4403394560567709700:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_4403394560569364485]' derivation='None' name='[none:Calculation_4403394560569364485:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/KHANHP~1/AppData/Local/Temp/TableauTemp/#TableauTemp_1o826v711j0wu31cnvmoc0perhzm.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/26/2025 04:10:34 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='game.csv_5F8E8A250AB744338F2414E6666B14DF' table='[Extract].[game.csv_5F8E8A250AB744338F2414E6666B14DF]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='rally.csv_C317B300146545E8AD89F068B822B297' table='[Extract].[rally.csv_C317B300146545E8AD89F068B822B297]' type='table' />
+            <relation name='game.csv_5F8E8A250AB744338F2414E6666B14DF' table='[Extract].[game.csv_5F8E8A250AB744338F2414E6666B14DF]' type='table' />
+            <relation name='shot.csv_6F946F47107E4F3A955A981C6BC19E6A' table='[Extract].[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[ball_type]' value='[game.csv_5F8E8A250AB744338F2414E6666B14DF].[ball_type]' />
+            <map key='[date_played]' value='[game.csv_5F8E8A250AB744338F2414E6666B14DF].[date_played]' />
+            <map key='[doubles_type]' value='[game.csv_5F8E8A250AB744338F2414E6666B14DF].[doubles_type]' />
+            <map key='[ending_player_id]' value='[rally.csv_C317B300146545E8AD89F068B822B297].[ending_player_id]' />
+            <map key='[ending_type]' value='[rally.csv_C317B300146545E8AD89F068B822B297].[ending_type]' />
+            <map key='[game_id (game.csv)]' value='[game.csv_5F8E8A250AB744338F2414E6666B14DF].[game_id]' />
+            <map key='[game_id]' value='[rally.csv_C317B300146545E8AD89F068B822B297].[game_id]' />
+            <map key='[game_number]' value='[game.csv_5F8E8A250AB744338F2414E6666B14DF].[game_number]' />
+            <map key='[loc_x]' value='[shot.csv_6F946F47107E4F3A955A981C6BC19E6A].[loc_x]' />
+            <map key='[loc_y]' value='[shot.csv_6F946F47107E4F3A955A981C6BC19E6A].[loc_y]' />
+            <map key='[loser_score]' value='[game.csv_5F8E8A250AB744338F2414E6666B14DF].[loser_score]' />
+            <map key='[losing_team_id]' value='[game.csv_5F8E8A250AB744338F2414E6666B14DF].[losing_team_id]' />
+            <map key='[match_id (game.csv)]' value='[game.csv_5F8E8A250AB744338F2414E6666B14DF].[match_id]' />
+            <map key='[match_id]' value='[rally.csv_C317B300146545E8AD89F068B822B297].[match_id]' />
+            <map key='[next_loc_x]' value='[shot.csv_6F946F47107E4F3A955A981C6BC19E6A].[next_loc_x]' />
+            <map key='[next_loc_y]' value='[shot.csv_6F946F47107E4F3A955A981C6BC19E6A].[next_loc_y]' />
+            <map key='[player_id]' value='[shot.csv_6F946F47107E4F3A955A981C6BC19E6A].[player_id]' />
+            <map key='[rally_id (shot.csv)]' value='[shot.csv_6F946F47107E4F3A955A981C6BC19E6A].[rally_id]' />
+            <map key='[rally_id]' value='[rally.csv_C317B300146545E8AD89F068B822B297].[rally_id]' />
+            <map key='[rally_length]' value='[rally.csv_C317B300146545E8AD89F068B822B297].[rally_length]' />
+            <map key='[rally_number]' value='[rally.csv_C317B300146545E8AD89F068B822B297].[rally_number]' />
+            <map key='[returning_player_id]' value='[rally.csv_C317B300146545E8AD89F068B822B297].[returning_player_id]' />
+            <map key='[returning_team_id]' value='[rally.csv_C317B300146545E8AD89F068B822B297].[returning_team_id]' />
+            <map key='[scoring_type]' value='[game.csv_5F8E8A250AB744338F2414E6666B14DF].[scoring_type]' />
+            <map key='[serving_player_id]' value='[rally.csv_C317B300146545E8AD89F068B822B297].[serving_player_id]' />
+            <map key='[serving_team_id]' value='[rally.csv_C317B300146545E8AD89F068B822B297].[serving_team_id]' />
+            <map key='[shot_id]' value='[shot.csv_6F946F47107E4F3A955A981C6BC19E6A].[shot_id]' />
+            <map key='[shot_number]' value='[shot.csv_6F946F47107E4F3A955A981C6BC19E6A].[shot_number]' />
+            <map key='[shot_type]' value='[shot.csv_6F946F47107E4F3A955A981C6BC19E6A].[shot_type]' />
+            <map key='[skill_level]' value='[game.csv_5F8E8A250AB744338F2414E6666B14DF].[skill_level]' />
+            <map key='[third_shot_type]' value='[rally.csv_C317B300146545E8AD89F068B822B297].[third_shot_type]' />
+            <map key='[thirdshot_player_id]' value='[rally.csv_C317B300146545E8AD89F068B822B297].[thirdshot_player_id]' />
+            <map key='[timeout]' value='[rally.csv_C317B300146545E8AD89F068B822B297].[timeout]' />
+            <map key='[timeout_team_id]' value='[rally.csv_C317B300146545E8AD89F068B822B297].[timeout_team_id]' />
+            <map key='[winner_score]' value='[game.csv_5F8E8A250AB744338F2414E6666B14DF].[winner_score]' />
+            <map key='[winning_team_id (game.csv)]' value='[game.csv_5F8E8A250AB744338F2414E6666B14DF].[winning_team_id]' />
+            <map key='[winning_team_id]' value='[rally.csv_C317B300146545E8AD89F068B822B297].[winning_team_id]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>rally_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[rally_id]</local-name>
+              <parent-name>[rally.csv_C317B300146545E8AD89F068B822B297]</parent-name>
+              <remote-alias>rally_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>rally.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>40702</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>game_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[game_id]</local-name>
+              <parent-name>[rally.csv_C317B300146545E8AD89F068B822B297]</parent-name>
+              <remote-alias>game_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>rally.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2457</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>match_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[match_id]</local-name>
+              <parent-name>[rally.csv_C317B300146545E8AD89F068B822B297]</parent-name>
+              <remote-alias>match_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>rally.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1967</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rally_number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[rally_number]</local-name>
+              <parent-name>[rally.csv_C317B300146545E8AD89F068B822B297]</parent-name>
+              <remote-alias>rally_number</remote-alias>
+              <ordinal>3</ordinal>
+              <family>rally.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>132</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>winning_team_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[winning_team_id]</local-name>
+              <parent-name>[rally.csv_C317B300146545E8AD89F068B822B297]</parent-name>
+              <remote-alias>winning_team_id</remote-alias>
+              <ordinal>4</ordinal>
+              <family>rally.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1851</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>serving_team_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[serving_team_id]</local-name>
+              <parent-name>[rally.csv_C317B300146545E8AD89F068B822B297]</parent-name>
+              <remote-alias>serving_team_id</remote-alias>
+              <ordinal>5</ordinal>
+              <family>rally.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1716</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>serving_player_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[serving_player_id]</local-name>
+              <parent-name>[rally.csv_C317B300146545E8AD89F068B822B297]</parent-name>
+              <remote-alias>serving_player_id</remote-alias>
+              <ordinal>6</ordinal>
+              <family>rally.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1761</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>returning_team_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[returning_team_id]</local-name>
+              <parent-name>[rally.csv_C317B300146545E8AD89F068B822B297]</parent-name>
+              <remote-alias>returning_team_id</remote-alias>
+              <ordinal>7</ordinal>
+              <family>rally.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1757</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>returning_player_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[returning_player_id]</local-name>
+              <parent-name>[rally.csv_C317B300146545E8AD89F068B822B297]</parent-name>
+              <remote-alias>returning_player_id</remote-alias>
+              <ordinal>8</ordinal>
+              <family>rally.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1977</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>thirdshot_player_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[thirdshot_player_id]</local-name>
+              <parent-name>[rally.csv_C317B300146545E8AD89F068B822B297]</parent-name>
+              <remote-alias>thirdshot_player_id</remote-alias>
+              <ordinal>9</ordinal>
+              <family>rally.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1515</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>third_shot_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[third_shot_type]</local-name>
+              <parent-name>[rally.csv_C317B300146545E8AD89F068B822B297]</parent-name>
+              <remote-alias>third_shot_type</remote-alias>
+              <ordinal>10</ordinal>
+              <family>rally.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>timeout</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[timeout]</local-name>
+              <parent-name>[rally.csv_C317B300146545E8AD89F068B822B297]</parent-name>
+              <remote-alias>timeout</remote-alias>
+              <ordinal>11</ordinal>
+              <family>rally.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>timeout_team_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[timeout_team_id]</local-name>
+              <parent-name>[rally.csv_C317B300146545E8AD89F068B822B297]</parent-name>
+              <remote-alias>timeout_team_id</remote-alias>
+              <ordinal>12</ordinal>
+              <family>rally.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>332</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rally_length</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[rally_length]</local-name>
+              <parent-name>[rally.csv_C317B300146545E8AD89F068B822B297]</parent-name>
+              <remote-alias>rally_length</remote-alias>
+              <ordinal>13</ordinal>
+              <family>rally.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>63</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ending_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ending_type]</local-name>
+              <parent-name>[rally.csv_C317B300146545E8AD89F068B822B297]</parent-name>
+              <remote-alias>ending_type</remote-alias>
+              <ordinal>14</ordinal>
+              <family>rally.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ending_player_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ending_player_id]</local-name>
+              <parent-name>[rally.csv_C317B300146545E8AD89F068B822B297]</parent-name>
+              <remote-alias>ending_player_id</remote-alias>
+              <ordinal>15</ordinal>
+              <family>rally.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1556</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rally.csv_C317B300146545E8AD89F068B822B297]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>game_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[game_id (game.csv)]</local-name>
+              <parent-name>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</parent-name>
+              <remote-alias>game_id</remote-alias>
+              <ordinal>16</ordinal>
+              <family>game.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>934</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>match_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[match_id (game.csv)]</local-name>
+              <parent-name>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</parent-name>
+              <remote-alias>match_id</remote-alias>
+              <ordinal>17</ordinal>
+              <family>game.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>768</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>game_number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[game_number]</local-name>
+              <parent-name>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</parent-name>
+              <remote-alias>game_number</remote-alias>
+              <ordinal>18</ordinal>
+              <family>game.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>winner_score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[winner_score]</local-name>
+              <parent-name>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</parent-name>
+              <remote-alias>winner_score</remote-alias>
+              <ordinal>19</ordinal>
+              <family>game.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>loser_score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[loser_score]</local-name>
+              <parent-name>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</parent-name>
+              <remote-alias>loser_score</remote-alias>
+              <ordinal>20</ordinal>
+              <family>game.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>winning_team_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[winning_team_id (game.csv)]</local-name>
+              <parent-name>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</parent-name>
+              <remote-alias>winning_team_id</remote-alias>
+              <ordinal>21</ordinal>
+              <family>game.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>481</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>losing_team_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[losing_team_id]</local-name>
+              <parent-name>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</parent-name>
+              <remote-alias>losing_team_id</remote-alias>
+              <ordinal>22</ordinal>
+              <family>game.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>499</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>skill_level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[skill_level]</local-name>
+              <parent-name>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</parent-name>
+              <remote-alias>skill_level</remote-alias>
+              <ordinal>23</ordinal>
+              <family>game.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>scoring_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[scoring_type]</local-name>
+              <parent-name>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</parent-name>
+              <remote-alias>scoring_type</remote-alias>
+              <ordinal>24</ordinal>
+              <family>game.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>doubles_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[doubles_type]</local-name>
+              <parent-name>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</parent-name>
+              <remote-alias>doubles_type</remote-alias>
+              <ordinal>25</ordinal>
+              <family>game.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ball_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ball_type]</local-name>
+              <parent-name>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</parent-name>
+              <remote-alias>ball_type</remote-alias>
+              <ordinal>26</ordinal>
+              <family>game.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date_played</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[date_played]</local-name>
+              <parent-name>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</parent-name>
+              <remote-alias>date_played</remote-alias>
+              <ordinal>27</ordinal>
+              <family>game.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>250</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[game.csv_5F8E8A250AB744338F2414E6666B14DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shot_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[shot_id]</local-name>
+              <parent-name>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</parent-name>
+              <remote-alias>shot_id</remote-alias>
+              <ordinal>28</ordinal>
+              <family>shot.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>304649</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rally_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[rally_id (shot.csv)]</local-name>
+              <parent-name>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</parent-name>
+              <remote-alias>rally_id</remote-alias>
+              <ordinal>29</ordinal>
+              <family>shot.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>93826</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shot_number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[shot_number]</local-name>
+              <parent-name>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</parent-name>
+              <remote-alias>shot_number</remote-alias>
+              <ordinal>30</ordinal>
+              <family>shot.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>112</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shot_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[shot_type]</local-name>
+              <parent-name>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</parent-name>
+              <remote-alias>shot_type</remote-alias>
+              <ordinal>31</ordinal>
+              <family>shot.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>player_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[player_id]</local-name>
+              <parent-name>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</parent-name>
+              <remote-alias>player_id</remote-alias>
+              <ordinal>32</ordinal>
+              <family>shot.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3545</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>loc_x</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[loc_x]</local-name>
+              <parent-name>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</parent-name>
+              <remote-alias>loc_x</remote-alias>
+              <ordinal>33</ordinal>
+              <family>shot.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2396</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>loc_y</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[loc_y]</local-name>
+              <parent-name>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</parent-name>
+              <remote-alias>loc_y</remote-alias>
+              <ordinal>34</ordinal>
+              <family>shot.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1973</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>next_loc_x</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[next_loc_x]</local-name>
+              <parent-name>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</parent-name>
+              <remote-alias>next_loc_x</remote-alias>
+              <ordinal>35</ordinal>
+              <family>shot.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2911</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>next_loc_y</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[next_loc_y]</local-name>
+              <parent-name>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</parent-name>
+              <remote-alias>next_loc_y</remote-alias>
+              <ordinal>36</ordinal>
+              <family>shot.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1664</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_4403394560567709700:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Alpha Zero Outdoor&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Gamma CHUCK&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Franklin X-40&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Selkirk Pro S1&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;JOOLA Heleus&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Vulcan VPRO&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Dura Fast 40&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Gearbox GB1&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;CORE Pickleball Outdoor&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_4403394560569364485:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;&lt; 3.0&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Senior Pro&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;5.0 - 5.5&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;4.0 - 4.5&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Pro&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;3.0 - 3.5&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='rally_id' />
+        <field-sort-custom-order field='game_id' />
+        <field-sort-custom-order field='match_id' />
+        <field-sort-custom-order field='rally_number' />
+        <field-sort-custom-order field='winning_team_id' />
+        <field-sort-custom-order field='serving_team_id' />
+        <field-sort-custom-order field='serving_player_id' />
+        <field-sort-custom-order field='returning_team_id' />
+        <field-sort-custom-order field='returning_player_id' />
+        <field-sort-custom-order field='thirdshot_player_id' />
+        <field-sort-custom-order field='third_shot_type' />
+        <field-sort-custom-order field='timeout' />
+        <field-sort-custom-order field='timeout_team_id' />
+        <field-sort-custom-order field='rally_length' />
+        <field-sort-custom-order field='ending_type' />
+        <field-sort-custom-order field='ending_player_id' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='game.csv' id='game.csv_5F8E8A250AB744338F2414E6666B14DF'>
+            <properties context=''>
+              <relation connection='textscan.0rwpw1o04nzh9n13r47mn1sztwto' name='game.csv' table='[game#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='game_id' ordinal='0' />
+                  <column datatype='string' name='match_id' ordinal='1' />
+                  <column datatype='integer' name='game_number' ordinal='2' />
+                  <column datatype='integer' name='winner_score' ordinal='3' />
+                  <column datatype='integer' name='loser_score' ordinal='4' />
+                  <column datatype='string' name='winning_team_id' ordinal='5' />
+                  <column datatype='string' name='losing_team_id' ordinal='6' />
+                  <column datatype='string' name='skill_level' ordinal='7' />
+                  <column datatype='string' name='scoring_type' ordinal='8' />
+                  <column datatype='string' name='doubles_type' ordinal='9' />
+                  <column datatype='string' name='ball_type' ordinal='10' />
+                  <column datatype='datetime' name='date_played' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='game.csv_5F8E8A250AB744338F2414E6666B14DF' table='[Extract].[game.csv_5F8E8A250AB744338F2414E6666B14DF]' type='table' />
+            </properties>
+          </object>
+          <object caption='rally.csv' id='rally.csv_C317B300146545E8AD89F068B822B297'>
+            <properties context=''>
+              <relation connection='textscan.138xtza0kwbrab1507mkn1wavhc1' name='rally.csv' table='[rally#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='rally_id' ordinal='0' />
+                  <column datatype='string' name='game_id' ordinal='1' />
+                  <column datatype='string' name='match_id' ordinal='2' />
+                  <column datatype='integer' name='rally_number' ordinal='3' />
+                  <column datatype='string' name='winning_team_id' ordinal='4' />
+                  <column datatype='string' name='serving_team_id' ordinal='5' />
+                  <column datatype='string' name='serving_player_id' ordinal='6' />
+                  <column datatype='string' name='returning_team_id' ordinal='7' />
+                  <column datatype='string' name='returning_player_id' ordinal='8' />
+                  <column datatype='string' name='thirdshot_player_id' ordinal='9' />
+                  <column datatype='string' name='third_shot_type' ordinal='10' />
+                  <column datatype='string' name='timeout' ordinal='11' />
+                  <column datatype='string' name='timeout_team_id' ordinal='12' />
+                  <column datatype='integer' name='rally_length' ordinal='13' />
+                  <column datatype='string' name='ending_type' ordinal='14' />
+                  <column datatype='string' name='ending_player_id' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='rally.csv_C317B300146545E8AD89F068B822B297' table='[Extract].[rally.csv_C317B300146545E8AD89F068B822B297]' type='table' />
+            </properties>
+          </object>
+          <object caption='shot.csv' id='shot.csv_6F946F47107E4F3A955A981C6BC19E6A'>
+            <properties context=''>
+              <relation connection='textscan.0rwpw1o04nzh9n13r47mn1sztwto' name='shot.csv' table='[shot#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='shot_id' ordinal='0' />
+                  <column datatype='string' name='rally_id' ordinal='1' />
+                  <column datatype='integer' name='shot_number' ordinal='2' />
+                  <column datatype='string' name='shot_type' ordinal='3' />
+                  <column datatype='string' name='player_id' ordinal='4' />
+                  <column datatype='real' name='loc_x' ordinal='5' />
+                  <column datatype='real' name='loc_y' ordinal='6' />
+                  <column datatype='real' name='next_loc_x' ordinal='7' />
+                  <column datatype='real' name='next_loc_y' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='shot.csv_6F946F47107E4F3A955A981C6BC19E6A' table='[Extract].[shot.csv_6F946F47107E4F3A955A981C6BC19E6A]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[game_id]' />
+              <expression op='[game_id (game.csv)]' />
+            </expression>
+            <first-end-point object-id='rally.csv_C317B300146545E8AD89F068B822B297' />
+            <second-end-point object-id='game.csv_5F8E8A250AB744338F2414E6666B14DF' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[rally_id]' />
+              <expression op='[rally_id (shot.csv)]' />
+            </expression>
+            <first-end-point object-id='rally.csv_C317B300146545E8AD89F068B822B297' />
+            <second-end-point object-id='shot.csv_6F946F47107E4F3A955A981C6BC19E6A' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Average Rally Length by Ball Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='rally.csv+ (Multiple Connections)' name='federated.1bxan031iz7ynu0zjza6g12yblcx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bxan031iz7ynu0zjza6g12yblcx'>
+            <column caption='Ball Type (VulcanGrouped)' datatype='string' name='[Calculation_4403394560567709700]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF CONTAINS([ball_type], &quot;Vulcan&quot;) THEN &quot;Vulcan VPRO&quot; &#13;&#10;ELSE [ball_type]&#13;&#10;END' />
+            </column>
+            <column caption='Skill Ranges' datatype='string' name='[Calculation_4403394560569364485]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [skill_level] = &apos;2.5&apos; THEN &apos;&lt; 3.0&apos;&#13;&#10;ELSEIF [skill_level] = &apos;3.0&apos; OR [skill_level] = &apos;3.5&apos; THEN &apos;3.0 - 3.5&apos;&#13;&#10;ELSEIF [skill_level] = &apos;4.0&apos; OR [skill_level] = &apos;4.5&apos; THEN &apos;4.0 - 4.5&apos;&#13;&#10;ELSEIF [skill_level] = &apos;5.0&apos; OR [skill_level] = &apos;5.5&apos; THEN &apos;5.0 - 5.5&apos;&#13;&#10;ELSEIF [skill_level] = &apos;Pro&apos; THEN &apos;Pro&apos;&#13;&#10;ELSEIF [skill_level] = &apos;Senior Pro&apos; THEN &apos;Senior Pro&apos;&#13;&#10;ELSE NULL&#13;&#10;END' />
+            </column>
+            <column-instance column='[rally_length]' derivation='Avg' name='[avg:rally_length:qk]' pivot='key' type='quantitative' />
+            <column caption='Ball Type' datatype='string' name='[ball_type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_4403394560567709700]' derivation='None' name='[none:Calculation_4403394560567709700:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4403394560569364485]' derivation='None' name='[none:Calculation_4403394560569364485:nk]' pivot='key' type='nominal' />
+            <column caption='Rally Length' datatype='integer' name='[rally_length]' role='measure' type='quantitative' />
+            <column caption='Skill Level' datatype='string' name='[skill_level]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560567709700:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Calculation_4403394560567709700:nk]' member='&quot;Dura Fast 40&quot;' />
+              <groupfilter function='member' level='[none:Calculation_4403394560567709700:nk]' member='&quot;Franklin X-40&quot;' />
+              <groupfilter function='member' level='[none:Calculation_4403394560567709700:nk]' member='&quot;Selkirk Pro S1&quot;' />
+              <groupfilter function='member' level='[none:Calculation_4403394560567709700:nk]' member='&quot;Vulcan VPRO&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_4403394560569364485:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Calculation_4403394560569364485:nk]' member='%null%' />
+                <groupfilter function='member' level='[none:Calculation_4403394560569364485:nk]' member='&quot;Senior Pro&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560567709700:nk]</column>
+            <column>[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560567709700:nk]' value='186' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bxan031iz7ynu0zjza6g12yblcx].[avg:rally_length:qk]</rows>
+        <cols>([federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560567709700:nk] / [federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk])</cols>
+      </table>
+      <simple-id uuid='{DF9301F0-0876-4EF3-A1C1-E75160F35E22}' />
+    </worksheet>
+    <worksheet name='PieChart (Balls by Skill level)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='rally.csv+ (Multiple Connections)' name='federated.1bxan031iz7ynu0zjza6g12yblcx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bxan031iz7ynu0zjza6g12yblcx'>
+            <column caption='Ball Type (VulcanGrouped)' datatype='string' name='[Calculation_4403394560567709700]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF CONTAINS([ball_type], &quot;Vulcan&quot;) THEN &quot;Vulcan VPRO&quot; &#13;&#10;ELSE [ball_type]&#13;&#10;END' />
+            </column>
+            <column caption='Skill Ranges' datatype='string' name='[Calculation_4403394560569364485]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [skill_level] = &apos;2.5&apos; THEN &apos;&lt; 3.0&apos;&#13;&#10;ELSEIF [skill_level] = &apos;3.0&apos; OR [skill_level] = &apos;3.5&apos; THEN &apos;3.0 - 3.5&apos;&#13;&#10;ELSEIF [skill_level] = &apos;4.0&apos; OR [skill_level] = &apos;4.5&apos; THEN &apos;4.0 - 4.5&apos;&#13;&#10;ELSEIF [skill_level] = &apos;5.0&apos; OR [skill_level] = &apos;5.5&apos; THEN &apos;5.0 - 5.5&apos;&#13;&#10;ELSEIF [skill_level] = &apos;Pro&apos; THEN &apos;Pro&apos;&#13;&#10;ELSEIF [skill_level] = &apos;Senior Pro&apos; THEN &apos;Senior Pro&apos;&#13;&#10;ELSE NULL&#13;&#10;END' />
+            </column>
+            <column caption='Ball Type' datatype='string' name='[ball_type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_4403394560567709700]' derivation='Count' name='[cnt:Calculation_4403394560567709700:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_4403394560567709700]' derivation='None' name='[none:Calculation_4403394560567709700:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4403394560569364485]' derivation='None' name='[none:Calculation_4403394560569364485:nk]' pivot='key' type='nominal' />
+            <column caption='Skill Level' datatype='string' name='[skill_level]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560567709700:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_4403394560567709700:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Calculation_4403394560567709700:nk]' member='&quot;Unknown&quot;' />
+                <groupfilter function='member' level='[none:Calculation_4403394560567709700:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]'>
+            <groupfilter function='level-members' level='[none:Calculation_4403394560569364485:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]</column>
+            <column>[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560567709700:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560567709700:nk]' />
+              <wedge-size column='[federated.1bxan031iz7ynu0zjza6g12yblcx].[cnt:Calculation_4403394560567709700:qk]' />
+              <size column='[federated.1bxan031iz7ynu0zjza6g12yblcx].[cnt:Calculation_4403394560567709700:qk]' />
+              <text column='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560567709700:nk]' />
+              <text column='[federated.1bxan031iz7ynu0zjza6g12yblcx].[cnt:Calculation_4403394560567709700:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.5932043790817261' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A185CF01-B436-46E3-80F4-B54EFEC02CF0}' />
+    </worksheet>
+    <worksheet name='Rally Length by Skill Range'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='rally.csv+ (Multiple Connections)' name='federated.1bxan031iz7ynu0zjza6g12yblcx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bxan031iz7ynu0zjza6g12yblcx'>
+            <column caption='Skill Ranges' datatype='string' name='[Calculation_4403394560569364485]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [skill_level] = &apos;2.5&apos; THEN &apos;&lt; 3.0&apos;&#13;&#10;ELSEIF [skill_level] = &apos;3.0&apos; OR [skill_level] = &apos;3.5&apos; THEN &apos;3.0 - 3.5&apos;&#13;&#10;ELSEIF [skill_level] = &apos;4.0&apos; OR [skill_level] = &apos;4.5&apos; THEN &apos;4.0 - 4.5&apos;&#13;&#10;ELSEIF [skill_level] = &apos;5.0&apos; OR [skill_level] = &apos;5.5&apos; THEN &apos;5.0 - 5.5&apos;&#13;&#10;ELSEIF [skill_level] = &apos;Pro&apos; THEN &apos;Pro&apos;&#13;&#10;ELSEIF [skill_level] = &apos;Senior Pro&apos; THEN &apos;Senior Pro&apos;&#13;&#10;ELSE NULL&#13;&#10;END' />
+            </column>
+            <column-instance column='[rally_length]' derivation='Avg' name='[avg:rally_length:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_4403394560569364485]' derivation='None' name='[none:Calculation_4403394560569364485:nk]' pivot='key' type='nominal' />
+            <column caption='Rally Length' datatype='integer' name='[rally_length]' role='measure' type='quantitative' />
+            <column caption='Skill Level' datatype='string' name='[skill_level]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_4403394560569364485:nk]' />
+              <groupfilter function='member' level='[none:Calculation_4403394560569364485:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>%null%</bucket>
+              <bucket>&quot;&lt; 3.0&quot;</bucket>
+              <bucket>&quot;3.0 - 3.5&quot;</bucket>
+              <bucket>&quot;4.0 - 4.5&quot;</bucket>
+              <bucket>&quot;5.0 - 5.5&quot;</bucket>
+              <bucket>&quot;Senior Pro&quot;</bucket>
+              <bucket>&quot;Pro&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]' value='90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bxan031iz7ynu0zjza6g12yblcx].[avg:rally_length:qk]</rows>
+        <cols>[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]</cols>
+      </table>
+      <simple-id uuid='{CCEB8744-C269-4AAA-ACDA-B110A7ADE766}' />
+    </worksheet>
+    <worksheet name='Third Shot Preference'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Third Shot Preference by Skill Level (n &gt; 30,000)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='rally.csv+ (Multiple Connections)' name='federated.1bxan031iz7ynu0zjza6g12yblcx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bxan031iz7ynu0zjza6g12yblcx'>
+            <column caption='Skill Ranges' datatype='string' name='[Calculation_4403394560569364485]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [skill_level] = &apos;2.5&apos; THEN &apos;&lt; 3.0&apos;&#13;&#10;ELSEIF [skill_level] = &apos;3.0&apos; OR [skill_level] = &apos;3.5&apos; THEN &apos;3.0 - 3.5&apos;&#13;&#10;ELSEIF [skill_level] = &apos;4.0&apos; OR [skill_level] = &apos;4.5&apos; THEN &apos;4.0 - 4.5&apos;&#13;&#10;ELSEIF [skill_level] = &apos;5.0&apos; OR [skill_level] = &apos;5.5&apos; THEN &apos;5.0 - 5.5&apos;&#13;&#10;ELSEIF [skill_level] = &apos;Pro&apos; THEN &apos;Pro&apos;&#13;&#10;ELSEIF [skill_level] = &apos;Senior Pro&apos; THEN &apos;Senior Pro&apos;&#13;&#10;ELSE NULL&#13;&#10;END' />
+            </column>
+            <column-instance column='[third_shot_type]' derivation='Count' name='[cnt:third_shot_type:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_4403394560569364485]' derivation='None' name='[none:Calculation_4403394560569364485:nk]' pivot='key' type='nominal' />
+            <column-instance column='[third_shot_type]' derivation='None' name='[none:third_shot_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[third_shot_type]' derivation='Count' name='[pcto:cnt:third_shot_type:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Pane' type='PctTotal' />
+            </column-instance>
+            <column caption='Skill Level' datatype='string' name='[skill_level]' role='dimension' type='nominal' />
+            <column caption='Third Shot Type' datatype='string' name='[third_shot_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_4403394560569364485:nk]' />
+              <groupfilter function='member' level='[none:Calculation_4403394560569364485:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;&lt; 3.0&quot;</bucket>
+              <bucket>&quot;3.0 - 3.5&quot;</bucket>
+              <bucket>&quot;4.0 - 4.5&quot;</bucket>
+              <bucket>&quot;5.0 - 5.5&quot;</bucket>
+              <bucket>&quot;Senior Pro&quot;</bucket>
+              <bucket>&quot;Pro&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:third_shot_type:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:third_shot_type:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:third_shot_type:nk]' member='%null%' />
+                <groupfilter function='member' level='[none:third_shot_type:nk]' member='&quot;N/A&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:third_shot_type:nk]</column>
+            <column>[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height-header' value='16' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:third_shot_type:nk]' />
+              <text column='[federated.1bxan031iz7ynu0zjza6g12yblcx].[cnt:third_shot_type:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bxan031iz7ynu0zjza6g12yblcx].[pcto:cnt:third_shot_type:qk:2]</rows>
+        <cols>([federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk] / [federated.1bxan031iz7ynu0zjza6g12yblcx].[none:third_shot_type:nk])</cols>
+      </table>
+      <simple-id uuid='{196E25F0-ACC0-436F-B5AE-C58F760C6DE0}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='5' param='vert' type-v2='layout-flow' w='97538' x='1231' y='930' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C1162FAD-7618-44C4-89ED-A08842291322}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{A1E2DEE3-32EB-40B3-8CCA-16FEA9E23D72}' />
+    </window>
+    <window class='worksheet' name='PieChart (Balls by Skill level)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560567709700:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1bxan031iz7ynu0zjza6g12yblcx].[cnt:Calculation_4403394560567709700:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560567709700:nk]</field>
+            <field>[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{82AC5571-4BB4-4E03-8ADF-99561747C023}' />
+    </window>
+    <window class='worksheet' name='Third Shot Preference'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:third_shot_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]</field>
+            <field>[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:skill_level:nk]</field>
+            <field>[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:third_shot_type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FED8A237-F008-489B-9698-5A921EF83147}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Rally Length by Skill Range'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]</field>
+            <field>[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:skill_level:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BE269D4B-F3E6-4B7D-BE01-1349EE688B15}' />
+    </window>
+    <window class='worksheet' name='Average Rally Length by Ball Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560567709700:nk]</field>
+            <field>[federated.1bxan031iz7ynu0zjza6g12yblcx].[none:Calculation_4403394560569364485:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0D474A5F-50CF-4D6D-BB12-BCD9FC172B8B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Average Rally Length by Ball Type' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACF0lEQVR4nO3TMQEAIAzAMIZ/z0MGRxMFfTq7uweCZmbu7wj4yQCkGYA0A5BmANIMQJoB
+      SDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0
+      A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMA
+      aQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5Bm
+      ANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYg
+      zQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIM
+      QJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCk
+      GYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoB
+      SDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0
+      A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSHtb
+      egWA0FAUAAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='PieChart (Balls by Skill level)' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAEa0lEQVR4nO3dPUsrWxiG4WfGaEzEhB0Q7LQQS7VRNP/E1j+ohZWFIgQsgqWNgoUG8kWM
+      iY4mM8msXWw41WlOcbboc1/tTGA1N+8sWGRFIYQgwFT81QsAvhIBwBoBwBoBwBoBwBoBwBoB
+      wBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoBwBoB
+      wBoBwBoBwBoBwBoBwBoBwFaWZQQAX1dXV4q4HwCuBoMBEwC++v0+EwDemACwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgD41ubzuS4uLtRoNJTn+X/6ba/X4ywQvrfHx0dlWaZ2u62N
+      jQ2dnp7q8PBQnU5H4/FYm5ub6na7ent7U6VS0e7urs7Pz3VycqLb21sCwPf2+vqqm5sbpWmq
+      crms4XCoUqmk/f193d/fq1gsSpKSJFG1WlWv19PLy4vq9boGgwEB4PsbDofKskyrq6sajUaq
+      VCpaWlrSbDb7550QguI41mw20/v7u2q1mgqFAgHAG5tg2Lm/v1ej0fgzFb56McDf1mw2tba2
+      JokJADMhBB0fH+vp6Umfn58EAD/NZlOFQkGlUolNMLwxAWCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCLG2JgjwBg6206JQD4GnwkBABfo8mEAODr5fODAOBrPGUCwFiSsgmG
+      sc8sIwB4CiHogwDgKkjK5nMCgK85RyHgKoSgPOQEAF95zgSAqUhSHEcEAFNRpDgiABgrxAsE
+      AE+RpKUFAoCpKIpUWlwkAPhaWVoiAPgqLxIAjFWLywQAX79KZQKAr1/lsqIQQvjqhQBfIUmn
+      BABf/DEW7BEAbEWcBYI7AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1
+      AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AsCP0u12
+      dXZ2pk6n86/PJ5OJnp+flee57u7uVPjL6wP+V0mSKEkSDYdDXV5eam9vT5eXlzo4OFC73db6
+      +rparZZ2dnbU7/eZAPhZ4jjW0dGRarWaDg8P1Wq1tLy8rCRJVK/XlWWZptOp5vO5JHFHGH6W
+      NE0l/Qkhz3NNJhONRiPVajUVi0WlaaqFhQWlaao4jgkA3tgDwEoIQQ8PD5rNZtra2mICwEsI
+      QaPRSNfX11pZWWETDC9RFGk8Hms2m3FLJPyEENRqtVStVrW9vc0nELwxAWCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGDt
+      N0QkUX6G1bzZAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Rally Length by Skill Range' width='192'>
+      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
+      /gvHLart1rqnsgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Third Shot Preference' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

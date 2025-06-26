@@ -1,0 +1,111 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table ball_type_ref {
+  ball_type varchar [primary key] // Ball type code
+  ball_type_desc varchar // Ball type full name
+}
+
+Table shot_type_ref {
+  shot_type varchar [primary key] // Shot type code
+  shot_type_desc varchar // Shot type description
+  shot_type_desc_full varchar // Full length description
+}
+
+Table player {
+  player_id varchar [primary key] // Unique player identifier
+  gender varchar // F = Female, M = Male
+  dom_hand varchar // Handedness, R = Right, L = Left
+  doubles_dupr float // Doubles DUPR rating
+  doublesreliabilityscore integer // Doubles DUPR reliability score
+}
+
+Table rally {
+  rally_id varchar [primary key] // Unique rally identifier
+  game_id varchar // Unique game identifier
+  match_id varchar // Unique match identifier
+  rally_nbr integer // When, relative to other rallies in the game, the rally was played
+  w_team_id varchar // Identifier of the team that won the rally
+  srv_team_id varchar // Identifier of the serving team
+  srv_player_id varchar // Identifier of the serving player
+  rtrn_team_id varchar // Identifier of the returning team
+  rtrn_player_id varchar // Identifier of the returning player
+  ts_player_id varchar // Identifier of the player who hit the third shot (if a third shot was hit)
+  ts_type varchar // Third shot type (if a third shot was hit)
+  to_ind varchar // Set to 'Y' of the record represents a timeout
+  to_team_id varchar // Identifier of the team who took a timeout (only applicable when to_ind = 'Y')
+  rally_len integer // Number of shots hit in the rally
+  ending_type varchar // How the rally ended (error, unforced error, or winner). Note that users also have the option for omitting this value, which often indicates the rally ended with a forced error (i.e. a ball that was very difficult to return)
+  ending_player_id varchar // If an ending type was selected, the identifier of the player who ended the rally
+  srv_switch_ind varchar // Indicator if the serving team elected to stack
+  rtrn_switch_ind varchar // Indicator if the returning team elected to stack
+  srv_team_flipped_ind varchar // Indicator of if, after any potential stacking, the serving team was aligned in the same way they began the match ('N') or not ('Y')
+  rtrn_team_flipped_ind varchar // Indicator of if, after any potential stacking, the returning team was aligned in the same way they began the match ('N') or not ('Y')
+  srv_team_rs_player_id varchar // Unique identifier of the player on the serving team who played the right side (considers stacking) (from perspective of the serving team)
+  srv_team_ls_player_id varchar // Unique identifier of the player on the serving team who played the left side (considers stacking) (from perspective of the serving team)
+  rtrn_team_rs_player_id varchar // Unique identifier of the player on the returning team who played the right side (considers stacking) (from perspective of the returning team)
+  rtrn_team_ls_player_id varchar // Unique identifier of the player on the returning team who played the left side (considers stacking) (from perspective of the returning team)
+}
+
+Table game {
+  game_id varchar [primary key] // Unique game identifier
+  match_id varchar // Unique match identifier
+  game_nbr integer // Identifies the when a game was played within a match
+  score_w integer // Score of the team that won the game
+  score_l integer // Score of the team that lost the game
+  w_team_id varchar // Unique team identifier who won the game
+  l_team_id varchar // Unique team identifier who lost the game
+  skill_lvl varchar // Skill level of the match, ranging from 3.0 (low) to Pro (high)
+  scoring_type varchar // What type of scoring was used. MLP utilizes rally scoring, whereas standard scoring utilizes side-out scoring.
+  ball_type varchar // Ball type code (see ball_type_ref)
+  dt_played date // date played
+
+}
+
+Table team {
+  team_id varchar [primary key] // Unique team identifier
+  player_id varchar // Unique player identifier
+  player_seq_nbr integer // Differentiates two players on the same team
+}
+
+Table shot {
+  shot_id varchar [primary key]
+  rally_id varchar // Unique rally identifier
+  shot_nbr integer // Sequential value indicating when a shot was hit during a rally (e.g. the first shot in a rally will have a value of 1)
+  shot_type varchar // Type of shot hit, see table description for more information
+  player_id varchar // The player who hit the shot, see the table description for more information
+  loc_x float // The X coordinate on the court the player struck the ball, in feet. A value of 0 indicates the right sideline and 20 indicates the left sideline (from the perspective of the player hitting the shot)
+  loc_y float // The Y coordinate on the on the court the player struck the ball, in feet. A value of 0 represents the net, and a value of 22 indicates the baseline (from the perspective of the player hitting the shot)
+  next_loc_x float // The X coordinate of where the subsequent shot was hit from. If this record represents a final shot, this value represents the X coordinate of where the shot landed.
+  next_loc_y float // The Y coordinate of where the subsequent shot was hit from. If this record represents a final shot, this value represents the Y coordinate of where the shot landed.
+
+
+}
+
+Ref: ball_type_ref.ball_type > game.ball_type
+Ref: shot_type_ref.shot_type > shot.shot_type
+
+Ref: rally.rally_id > shot.rally_id
+
+Ref: player.player_id > rally.srv_player_id
+Ref: player.player_id > rally.rtrn_player_id
+Ref: player.player_id > rally.ts_player_id
+Ref: player.player_id > rally.ending_player_id
+Ref: player.player_id > rally.srv_team_rs_player_id
+Ref: player.player_id > rally.srv_team_ls_player_id
+Ref: player.player_id > rally.rtrn_team_rs_player_id
+Ref: player.player_id > rally.rtrn_team_ls_player_id
+Ref: player.player_id > team.player_id
+Ref: player.player_id > shot.player_id
+
+
+Ref: game.game_id > rally.game_id 
+Ref: game.match_id > rally.match_id 
+
+Ref: team.team_id > game.w_team_id
+Ref: team.team_id > game.l_team_id
+Ref: team.team_id > rally.w_team_id
+Ref: team.team_id > rally.srv_team_id
+Ref: team.team_id > rally.rtrn_team_id
+Ref: team.team_id > rally.to_team_id
+
